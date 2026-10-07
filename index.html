@@ -3,21 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Escape Room Demo</title>
+    <title>Escape Room Control Panel</title>
     <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
 
-    <h1>Escape Room Control Panel</h1>
+    <div class="container">
 
-    <p id="status">Room Locked</p>
+        <h1>ESCAPE ROOM</h1>
+        <h2>CONTROL PANEL</h2>
 
-    <button onclick="powerOn()">Restore Power</button>
-    <button onclick="alarmOff()">Disable Alarm</button>
-    <button onclick="openDoor()">Unlock Door</button>
+        <p>Complete the steps to unlock the door.</p>
 
-    <p id="message">Restore power to begin.</p>
+        <div class="status-box">
+            <p>SYSTEM STATUS</p>
+            <h3 id="status">Room Locked</h3>
+        </div>
+
+        <button onclick="powerOn()">Restore Power</button>
+        <button onclick="alarmOff()">Disable Alarm</button>
+        <button onclick="openDoor()">Unlock Door</button>
+
+        <p id="message">Restore power to begin.</p>
+
+    </div>
 
     <script src="script.js"></script>
 
