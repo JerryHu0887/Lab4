@@ -37,3 +37,6 @@ function openDoor() {
         document.getElementById("message").innerHTML = "You escaped!";
     }
 }
+
+
+// 
