@@ -1,55 +1,127 @@
-/* Page style */
+/* Page */
 body {
-    background-color: #1a1a1a;
+    margin: 0;
+    background-color: #111111;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 
-/* Main box */
+
+/* Main panel */
 .container {
-    width: 600px;
-    margin: 80px auto;
-    padding: 30px;
-    background-color: #2b2b2b;
+    width: 700px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #202020;
     border: 2px solid #555555;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
+
 /* Title */
+.small-title {
+    color: #888888;
+    letter-spacing: 3px;
+}
+
 h1 {
     margin-bottom: 5px;
+    letter-spacing: 4px;
 }
 
 h2 {
     margin-top: 0;
     color: #aaaaaa;
+    letter-spacing: 2px;
 }
 
-/* Status area */
-.status-box {
-    margin: 25px 0;
-    padding: 15px;
-    background-color: #202020;
+header p {
+    color: #bbbbbb;
+}
+
+
+/* Main status */
+.main-status {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #161616;
+    border: 2px solid #555555;
+}
+
+.main-status p {
+    color: #888888;
+    letter-spacing: 2px;
+}
+
+#status {
+    color: #ff5555;
+    font-size: 30px;
+}
+
+
+/* Three system boxes */
+.systems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.system-box {
+    width: 28%;
+    padding: 18px;
+    background-color: #292929;
     border: 1px solid #555555;
 }
 
+.system-box p {
+    color: #999999;
+    letter-spacing: 2px;
+}
+
+
 /* Buttons */
+.controls {
+    margin: 30px 0;
+}
+
 button {
-    padding: 12px 18px;
+    padding: 14px 18px;
     margin: 8px;
-    background-color: #444444;
+    background-color: #3b3b3b;
     color: white;
     border: 1px solid #777777;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #666666;
+    background-color: #555555;
 }
 
-/* Message */
+
+/* System message */
+.message-box {
+    padding: 18px;
+    background-color: #161616;
+    border: 1px solid #555555;
+}
+
+.message-box p {
+    color: #888888;
+    letter-spacing: 2px;
+}
+
 #message {
-    margin-top: 25px;
     color: #ffcc66;
+}
+
+
+/* Reset */
+.reset {
+    margin-top: 25px;
+    background-color: #552222;
+}
+
+.reset:hover {
+    background-color: #773333;
 }

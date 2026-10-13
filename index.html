@@ -3,32 +3,89 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Escape Room Control Panel</title>
+
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
 
+    <!-- Main control panel -->
     <div class="container">
 
-        <h1>ESCAPE ROOM</h1>
-        <h2>CONTROL PANEL</h2>
+        <!-- Title -->
+        <header>
+            <p class="small-title">ROOM 01</p>
+            <h1>ESCAPE ROOM</h1>
+            <h2>CONTROL PANEL</h2>
+            <p>Complete the security sequence to unlock the exit.</p>
+        </header>
 
-        <p>Complete the steps to unlock the door.</p>
-
-        <div class="status-box">
+        <!-- Main system status -->
+        <div class="main-status">
             <p>SYSTEM STATUS</p>
-            <h3 id="status">Room Locked</h3>
+            <h3 id="status">LOCKED</h3>
         </div>
 
-        <button onclick="powerOn()">Restore Power</button>
-        <button onclick="alarmOff()">Disable Alarm</button>
-        <button onclick="openDoor()">Unlock Door</button>
+        <!-- Individual system states -->
+        <div class="systems">
 
-        <p id="message">Restore power to begin.</p>
+            <div class="system-box">
+                <p>POWER</p>
+                <h3 id="powerStatus">OFF</h3>
+            </div>
+
+            <div class="system-box">
+                <p>ALARM</p>
+                <h3 id="alarmStatus">ACTIVE</h3>
+            </div>
+
+            <div class="system-box">
+                <p>DOOR</p>
+                <h3 id="doorStatus">LOCKED</h3>
+            </div>
+
+        </div>
+
+        <!-- Control buttons -->
+        <div class="controls">
+
+            <button onclick="restorePower()">
+                RESTORE POWER
+            </button>
+
+            <button onclick="disableAlarm()">
+                DISABLE ALARM
+            </button>
+
+            <button onclick="unlockDoor()">
+                UNLOCK DOOR
+            </button>
+
+        </div>
+
+        <!-- System message -->
+        <div class="message-box">
+
+            <p>SYSTEM MESSAGE</p>
+
+            <h3 id="message">
+                Restore power to begin.
+            </h3>
+
+        </div>
+
+        <!-- Reset button -->
+        <button class="reset" onclick="resetSystem()">
+            RESET SYSTEM
+        </button>
 
     </div>
 
+    <!-- Link to JavaScript -->
     <script src="script.js"></script>
 
 </body>
